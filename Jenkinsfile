@@ -3,7 +3,6 @@ pipeline {
         docker {
             label 'docker'
             image 'maven:3.5.4-jdk-8-alpine'
-            registryCredentialsId 'NEXUS_DOCKER_REGISTRY'
             args '-v /var/lib/jenkins/sbt/cache:/home/jenkins'
         }
     }
